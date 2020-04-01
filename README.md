@@ -4,6 +4,7 @@ Weekly and Daily Projections of COVID19 Epidemic Outcomes and Healthcare Demands
 Acknowledgement: We thank the NYC Department of Health and Mental Hygiene (DOHMH) for sharing of data and allowing this public posting. 
 
 
+
 Main Model Settings, Assumptions, Inputs, and Outputs
 
 Authors: Wan Yang,1 Sasikiran Kandula,2 Jeffrey Shaman2
