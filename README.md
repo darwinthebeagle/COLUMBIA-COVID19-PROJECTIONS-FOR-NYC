@@ -1,5 +1,8 @@
 # COLUMBIA-COVID19-PROJECTIONS-FOR-NYC
-Weekly and Daily Projections of COVID19 Epidemic Outcomes and Healthcare Demands for NYC
+Weekly and Daily Projections of COVID19 Epidemic Outcomes and Healthcare Demands for New York City (NYC)
+
+Acknowledgemen: We thank the NYC Department of Health and Mental Hygiene (DOHMH) for sharing of data and allowing this public posting. 
+
 
 Main Model Settings, Assumptions, Inputs, and Outputs
 
