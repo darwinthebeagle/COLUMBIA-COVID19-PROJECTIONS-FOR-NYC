@@ -4,6 +4,7 @@ Weekly and Daily Projections of COVID19 Epidemic Outcomes and Healthcare Demands
 Main Model Settings, Assumptions, Inputs, and Outputs
 
 Authors: Wan Yang,1 Sasikiran Kandula,2 Jeffrey Shaman2
+
 1Department of Epidemiology, 2Department of Environmental Health Sciences, Mailman School of Public Health, Columbia University
 
 1. Model Form
