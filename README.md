@@ -3,7 +3,8 @@ Weekly and Daily Projections of COVID19 Epidemic Outcomes and Healthcare Demands
 
 Acknowledgement: We thank the NYC Department of Health and Mental Hygiene (DOHMH) for sharing of data and allowing this public posting. 
 
-Caution: Please note that there are large uncertainties in our model projections due to unknown disease transmission dynamics (model misspecification), delay in reporting, and under-reporting. In particular, the data our projections are based on reflect situations ~2 weeks ago due to time lags from interventions implemented to transmission events (a couple days to weeks), from infection to symptom onset (~2-6 days), from symptom onset to seeking treatment (~2-7 days), from seeking treatment to getting tested and then reported in the surveillance system (~2-7 days). 
+Caution: Please note that there are large uncertainties in our model projections due to unknown disease transmission dynamics (model misspecification), changing behavior and policies, delay in reporting, and under-reporting. In particular, the data our projections are based on reflect situations ~2 weeks ago due to time lags from interventions implemented to transmission events (a couple days to weeks), from infection to symptom onset (~2-6 days), from symptom onset to seeking treatment (~2-7 days), from seeking treatment to getting tested and then reported in the surveillance system (~2-7 days). In addition, how the epidemic would unfold also depend largely in behavior changes over time.  
+
 
 
 
