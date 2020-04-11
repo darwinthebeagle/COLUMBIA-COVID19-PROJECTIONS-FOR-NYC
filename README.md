@@ -4,6 +4,7 @@
 Authors: Wan Yang(1),  Sasikiran Kandula(2), Jeffrey Shaman(2)
 
 (1)Department of Epidemiology, (2)Department of Environmental Health Sciences, Mailman School of Public Health, Columbia University
+
 Contact: Wan Yang (wy2202@cumc.columbia.edu)
 
 Acknowledgement: We thank the NYC Department of Health and Mental Hygiene (DOHMH) for sharing of data and allowing this public posting. 
@@ -13,23 +14,23 @@ Caution: Please note that there are large uncertainties in our model projections
 
 
 
-## Main Model Settings, Assumptions, Inputs, and Outputs
+### Main Model Settings, Assumptions, Inputs, and Outputs
 
-### 1. Model Form
+#### 1. Model Form
 
 Susceptible-Exposed-Infectious-Removed (SEIR) model accounting for reporting delay for case diagnosis, and delay from infection to hospitalization, ICU admission, and death for estimating the numbers of hospitalization, ICU, and death by week, respectively.
 
-### 2. Data
+#### 2. Data
 
 Confirmed cases of COVID-19 in New York City (from Week 10, i.e. March 1-7 of 2020 to the most recent week, date labeled in the Results folder), provided by NYC DOHMH. 
 
-### 3. Model Training and Assumptions
+#### 3. Model Training and Assumptions
 
 Bayesian inference approach in which the DOHMH data are used to partially constrain the model parameters and state variables prior to making a projection. The form is similar to that used for influenza forecasting; however, here the data are very limited (3 weeks) so the model is less well constrained.  Initial prior ranges are set as: transmission rate (β): [0.5, 1]; latency period (Tei): [2, 5] days; infectious period (Tir): [2, 5] days; mean reporting delay (i.e., from viral shedding to being diagnosed; Td.mean): [3, 9] days; standard deviation of reporting delay (Td.sd): [1, 3] days; and reporting rate (i.e., the proportion of infections that are diagnosed; ⍺): [5, 80]%. These parameters are estimated based on the weekly confirmed case data.  
 
 In addition, for the delay from infection to hospitalization, ICU, and death, we used reported time from symptom onset of SARS-CoV-2 to the corresponding event (Yang et al. 2020; Zhou et al. 2020; Wang et al. 2020). To compute the numbers of different health outcomes from the model estimated total infections, we used the following probability ranges: 3-9% for hospitalization (severe and critical cases); 1-3.6% for ICU and 0.5-1.5% for mortality. These probabilities are based on reported numbers among diagnosed cases in NYC (information from NYC DOHMH), China (China CDC, 2020) and other countries and assuming a 20-30% ascertainment rate (Li et al., 2020). To compute the healthcare demands for each week, we used reported retention times in hospitals and ICU (Zhou et al. 2020) for corresponding estimates.  See further details below. 
 
-### 4. Model Scenarios
+#### 4. Model Scenarios
 
 Seasonality: There are 4 endemic coronaviruses infecting humans (OC43, 229E, NL63, HKU1).  These viruses typically cause mild cold-like symptoms and exhibit a pronounced seasonality with peak incidence in January-February and very little incidence in summer. The cause of this seasonality is unknown, but its presence has led to speculation that SARS-CoV-2, the virus causing COVID-19, may wane during summer months in New York City.  Consequently, we used the seasonality of OC43, which is well observed and a betacoronavirus, like SARS-CoV2, to estimate a seasonal reduction of transmissibility for SARS-CoV2 during summertime.  We then generated projections from the 2 forms for all scenarios: 1) With seasonal changes to virus transmissibility; and 2) Without seasonality. 
 
@@ -53,7 +54,7 @@ Control Scenarios: Five control scenarios, using the model posterior as initial 
 
 Note there is no particular specification of how reductions in contact rates or spread are achieved.  In a model of this form different reduction options (e.g. isolation vs. quarantine) are not represented explicitly; rather, they are effected by adjusting the estimated (posterior) contact rate and infectious period within the model, relative to estimates for the most recent week (the As Is scenario).
 
-### 5. Model Output 
+#### 5. Model Output 
 
 We use the model to estimate new weekly numbers of total infections, reported/observed infections, hospitalizations, patients in ICU, and deaths. For the latter three health outcomes we accounted for delay from infection to corresponding event as described above. 
 
