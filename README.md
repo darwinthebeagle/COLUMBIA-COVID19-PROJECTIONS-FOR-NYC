@@ -1,4 +1,4 @@
-# Weekly and Daily Projections of COVID19 Epidemic Outcomes and Healthcare Demands for New York City (NYC)
+# Projections of COVID19 Epidemic Outcomes and Healthcare Demands for New York City (NYC)
 
 Authors: Wan Yang(1),  Sasikiran Kandula(2), Jeffrey Shaman(2)
 
