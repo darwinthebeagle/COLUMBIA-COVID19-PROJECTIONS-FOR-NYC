@@ -7,7 +7,7 @@ Authors: Wan Yang(1),  Sasikiran Kandula(2), Jeffrey Shaman(2)
 Contact: Wan Yang (wy2202@cumc.columbia.edu)
 
 ### Acknowledgement: 
-We thank the NYC Department of Health and Mental Hygiene (DOHMH) for sharing of data and allowing this public posting. 
+We thank the NYC Department of Health and Mental Hygiene (DOHMH) for sharing of data and allowing this public posting. We also thank the Columbia University Mailman School of Public Health for high performance computing and Safe Graph (safegraph.com) for providing mobility data. 
 
 ### Caution: 
 Please note that there are large uncertainties in our model projections due to unknown disease transmission dynamics (model misspecification), changing behavior and policies, delay in reporting, and under-reporting. In particular, the data our projections are based on reflect situations ~2 weeks ago due to time lags from interventions implemented to transmission events (a couple days to weeks), from infection to symptom onset (~2-6 days), from symptom onset to seeking treatment (~2-7 days), from seeking treatment to getting tested and then reported in the surveillance system (~2-7 days). In addition, how the epidemic would unfold also depend largely on behavior changes over time.  
@@ -19,7 +19,17 @@ Please note that there are large uncertainties in our model projections due to u
 
 ### 1. Model Form
 
-Susceptible-Exposed-Infectious-Removed (SEIR) model accounting for reporting delay for case diagnosis, and delay from infection to hospitalization, ICU admission, and death for estimating the numbers of hospitalization, ICU, and death by week, respectively.
+#### 1.1. City-level SEIR model
+Susceptible-Exposed-Infectious-Removed (SEIR) model accounting for reporting delay for case diagnosis, and delay from infection to hospitalization, ICU admission, and death for estimating the numbers of hospitalization, ICU, and death by week, respectively.  This model was used for projections generated from March 16 – April 3, 2020.
+
+#### 1.2. SEIR model by age group
+For this model, the same SEIR construct is used; however, the model parameters account for differences by age (e.g. reporting rate and disease severity) and the model is trained using age-specific incidence data for eight age groups: <1, 1-4, 5-14, 15-24, 25-44, 45-64, 65-74, and 75+ years, separately. This system is used for projections generated from 4/3/2020 onwards.  
+
+#### 1.3. Network SEIR model by age group
+This system accounts for spatial heterogeneity using a network model capturing connections among 42 United Hospital Fund (UHF) neighborhoods in NYC. This system also incorporates mobility data provided by Safegraph.com to gauge changes in transmission within each UHF neighborhood and between pairs of neighborhoods. The model is trained using age-specific, UHF-specific incidence data.  
+
+Note that UHF locations are based on residential address and may not match with hospital locations and catchment area. 
+
 
 ### 2. Data
 
