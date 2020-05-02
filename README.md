@@ -65,8 +65,8 @@ Control Scenarios: Five control scenarios, using the model posterior as initial 
 
 Rebound Scenarios: In light of the recent uptick in mobility and potential rebound in transmission rate, from 5/1/2020 onwards, we also simulate two rebound scenarios, using the model posterior as initial conditions and adjustment of model parameters (relative to the As Is scenario estimates) to represent different levels of transmission rebound:
 
-1.	Moderate (25%) increase in contact rate (relax in social distancing) 
-2.	Large (50%) increase in contact rate (relax in social distancing)  
+1.	Moderate (25%) increase in contact rate (relaxed social distancing) 
+2.	Large (50%) increase in contact rate (relaxed social distancing)  
 
 
 Note there is no particular specification of how reductions in contact rates or spread are achieved.  In a model of this form different reduction options (e.g. isolation vs. quarantine) are not represented explicitly; rather, they are effected by adjusting the estimated (posterior) contact rate and infectious period within the model, relative to estimates for the most recent week (the As Is scenario).
